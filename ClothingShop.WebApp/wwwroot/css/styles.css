@@ -45,5 +45,154 @@ html {
 
 body {
   font-family: "IranSans";
-  @apply bg-gray-50 text-gray-800;
+  @apply bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200;
+}
+
+svg {
+  @apply fill-gray-800 dark:fill-gray-200;
+}
+
+.admin-header {
+  @apply h-16 flex items-center mx-4 border-b border-gray-300 dark:border-gray-700 lg:mr-[19rem] transition-[margin] duration-300;
+}
+
+.admin-header-resize {
+  @apply lg:mr-[6rem] duration-300;
+}
+
+.admin-navs {
+  @apply flex flex-row-reverse gap-2 mr-auto;
+}
+
+.admin-navs button {
+  @apply p-2 rounded bg-gray-200 dark:bg-gray-800;
+}
+
+.admin-navs svg {
+  @apply w-6 h-6;
+}
+
+.admin-navs button:hover svg {
+  @apply fill-violet-500;
+}
+
+.admin-sidebar-backdrop {
+  @apply fixed inset-0 bg-gray-700 opacity-90 hidden;
+}
+
+.admin-sidebar-backdrop-toggle {
+  @apply block lg:hidden;
+}
+
+.admin-sidebar {
+  @apply w-72 fixed inset-0 -right-72 lg:right-0 bg-gray-200 dark:bg-gray-900 lg:dark:bg-gray-800 duration-300 transition-[right,width];
+}
+
+.admin-sidebar-toggle {
+  @apply right-0 lg:w-20 duration-300;
+}
+
+.admin-sidebar-brand-rotate {
+  @apply lg:rotate-[360deg] duration-300;
+}
+
+.admin-brand-title-scale {
+  @apply lg:scale-0 duration-300;
+}
+
+.admin-sidebar-toggler-btn-circle-rotate {
+  @apply rotate-[180deg] duration-300;
+}
+
+.admin-sidebar-navs {
+  @apply flex flex-col gap-1 mx-4 my-2;
+}
+
+.admin-sidebar-navs a {
+  @apply flex items-center px-3 py-2 rounded bg-gray-300 dark:bg-gray-900 hover:bg-violet-500 dark:hover:bg-violet-500;
+}
+
+.admin-sidebar-navs a svg {
+  @apply w-6 h-6;
+}
+
+.admin-sidebar-navs a:hover svg {
+  @apply fill-gray-200;
+}
+
+.admin-sidebar-navs a span {
+  @apply mr-2 min-w-max transition-transform origin-right duration-300;
+}
+
+.admin-sidebar-navs a:hover span {
+  @apply text-gray-200;
+}
+
+.admin-sidebar-navs-title-scale {
+  @apply lg:scale-0 duration-300;
+}
+
+.admin-main-content {
+  @apply shadow-lg dark:shadow-gray-800 border border-gray-300 dark:border-gray-700 rounded m-4 my-2 lg:my-4 p-2 lg:p-4 lg:mr-[19rem] transition-[margin] duration-300;
+}
+
+.admin-main-content-resize {
+  @apply lg:mr-[6rem] duration-300;
+}
+
+.btn {
+  @apply flex items-center p-2 rounded;
+}
+
+.btn svg {
+  @apply w-5 h-5 fill-gray-200;
+}
+
+.btn span {
+  @apply mr-1 text-gray-200;
+}
+
+.btn-sky {
+  @apply bg-sky-500 hover:bg-sky-600;
+}
+
+.table {
+  @apply w-full;
+}
+
+.table thead tr th {
+  @apply text-right p-2 bg-violet-500 text-gray-200;
+}
+
+.table thead tr th:first-child {
+  @apply rounded-tr rounded-br;
+}
+
+.table thead tr th:last-child {
+  @apply rounded-tl rounded-bl;
+}
+
+.table tbody tr {
+  @apply even:bg-gray-200 hover:bg-gray-300 dark:even:bg-gray-800 dark:hover:bg-gray-700;
+}
+
+.table tbody tr td {
+  @apply p-2 border-b border-gray-300 dark:border-gray-700;
+}
+
+.table-search {
+  @apply flex items-center;
+}
+
+.table-search button {
+  @apply p-2 px-3 h-10 bg-sky-500 hover:bg-sky-600 rounded-tr rounded-br;
+}
+
+.table-search button svg {
+  @apply w-5 h-5 fill-gray-200;
+}
+
+.table-search input {
+  @apply h-10 outline-none pr-2 border border-gray-300 dark:border-gray-700 focus:border-violet-500 dark:focus:border-violet-500 
+  rounded-tl rounded-bl bg-gray-200 dark:bg-gray-800;
 }

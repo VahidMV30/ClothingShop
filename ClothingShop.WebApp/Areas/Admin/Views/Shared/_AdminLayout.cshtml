@@ -13,9 +13,76 @@
         await Html.RenderPartialAsync("_Icons");
     }
 
-    <header class="bg-rose-500">Vahid MV</header>
+    <header class="admin-header">
+        <div class="flex items-center lg:hidden">
+            <div class="p-2 rounded bg-violet-500">
+                <svg class="w-8 h-8 fill-gray-200">
+                    <use xlink:href="#brand" />
+                </svg>
+            </div>
+            <span class="mr-2 font-semibold">فروشگاه لباس</span>
+        </div>
+        <div class="admin-navs">
+            <button type="button" class="admin-sidebar-toggler-btn">
+                <svg>
+                    <use xlink:href="#bars" />
+                </svg>
+            </button>
+            <button type="button" class="dark-light-toggler-btn">
+                <svg>
+                    <use xlink:href="#moon" />
+                </svg>
+            </button>
+            <button type="button">
+                <svg>
+                    <use xlink:href="#user" />
+                </svg>
+            </button>
+        </div>
+    </header>
 
-    <main>@RenderBody()</main>
+    <div class="admin-sidebar-backdrop"></div>
+    <div class="admin-sidebar">
+        <div class="h-16 mx-4 flex items-center border-b border-gray-300 dark:border-gray-700">
+            <div class="flex items-center">
+                <div class="admin-sidebar-brand p-2 rounded bg-violet-500 transition-transform duration-300">
+                    <svg class="w-8 h-8 fill-gray-200">
+                        <use xlink:href="#brand" />
+                    </svg>
+                </div>
+                <span
+                    class="admin-brand-title mr-2 font-semibold min-w-max origin-right transition-transform duration-300">فروشگاه
+                    لباس</span>
+            </div>
+            <button type="button"
+                class="admin-sidebar-toggler-btn admin-sidebar-toggler-btn-circle p-1 rounded-3xl hidden lg:block absolute -left-[.83rem] bg-violet-500 transition-transform duration-300">
+                <svg class="w-5 h-5 fill-gray-200">
+                    <use xlink:href="#arrow-right" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="admin-sidebar-navs">
+            <a asp-area="admin" asp-controller="dashboard">
+                <div>
+                    <svg>
+                        <use xlink:href="#dashboard" />
+                    </svg>
+                </div>
+                <span>داشبورد</span>
+            </a>
+            <a asp-area="admin" asp-controller="categories">
+                <div>
+                    <svg>
+                        <use xlink:href="#tag" />
+                    </svg>
+                </div>
+                <span>گروه بندی محصولات</span>
+            </a>
+        </div>
+    </div>
+
+    <main class="admin-main-content">@RenderBody()</main>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

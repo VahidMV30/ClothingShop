@@ -6,6 +6,7 @@ module.exports = {
     "./Areas/Admin/Pages/**/*.cshtml",
     "./Areas/Admin/Views/**/*.cshtml",
   ],
+  darkMode: "class",
   theme: {
     extend: {},
   },
