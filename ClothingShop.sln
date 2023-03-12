@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingShop.WebApp", "ClothingShop.WebApp\ClothingShop.WebApp.csproj", "{13485A59-E620-4C52-86D2-252CD63C9AC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClothingShop.WebApp", "ClothingShop.WebApp\ClothingShop.WebApp.csproj", "{13485A59-E620-4C52-86D2-252CD63C9AC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingShop.Domain", "ClothingShop.Domain\ClothingShop.Domain.csproj", "{A9A5D472-F251-40F1-8826-78592D0E2DF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingShop.Infrastructure", "ClothingShop.Infrastructure\ClothingShop.Infrastructure.csproj", "{B975D5CC-927D-486F-B44B-B3420B9957D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingShop.Application", "ClothingShop.Application\ClothingShop.Application.csproj", "{6BE957BD-AB95-437E-9EB3-FBDEA83A587F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +21,23 @@ Global
 		{13485A59-E620-4C52-86D2-252CD63C9AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13485A59-E620-4C52-86D2-252CD63C9AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13485A59-E620-4C52-86D2-252CD63C9AC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9A5D472-F251-40F1-8826-78592D0E2DF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9A5D472-F251-40F1-8826-78592D0E2DF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9A5D472-F251-40F1-8826-78592D0E2DF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9A5D472-F251-40F1-8826-78592D0E2DF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B975D5CC-927D-486F-B44B-B3420B9957D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B975D5CC-927D-486F-B44B-B3420B9957D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B975D5CC-927D-486F-B44B-B3420B9957D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B975D5CC-927D-486F-B44B-B3420B9957D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BE957BD-AB95-437E-9EB3-FBDEA83A587F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BE957BD-AB95-437E-9EB3-FBDEA83A587F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BE957BD-AB95-437E-9EB3-FBDEA83A587F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BE957BD-AB95-437E-9EB3-FBDEA83A587F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33D94770-8128-4CAC-A05A-68147D3E5884}
 	EndGlobalSection
 EndGlobal
